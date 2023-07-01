@@ -3,6 +3,7 @@ asttokens==2.2.1
 backcall==0.2.0
 decorator==5.1.1
 executing==1.2.0
+fitparse==1.2.0
 geographiclib==2.0
 geopy==2.3.0
 greenlet==2.0.2
