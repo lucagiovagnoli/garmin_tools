@@ -44,16 +44,13 @@ jQuery.ajax({
     act_list.forEach(
         function(act){
              jQuery.ajax({
-                  headers: {
-                     'DI-Backend':'connectapi.garmin.com',
-                     'Authorization':'Bearer ' + JSON.parse(localStorage.token).access_token,
-                     'Accept': 'application/json',
-                    },
-                  url:'/gear-service/gear/link/'+ GT2000ID + '/activity/' + act['activityId'],
-                  method: 'PUT',
-                  complete: function(xhr, textStatus) {
-                        console.log(act['activityId'], xhr.status);
-                  } 
+                 headers: {...h, 'Accept': 'application/json'},
+                 timeout: 1000,
+                 url:'/gear-service/gear/link/'+ GT2000ID + '/activity/' + act['activityId'],
+                 method: 'PUT',
+                 complete: function(xhr, textStatus) {
+                     console.log(act['activityId'], xhr.status);
+                 } 
             });
         })
 	}
