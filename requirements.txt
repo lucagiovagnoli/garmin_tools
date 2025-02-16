@@ -6,7 +6,7 @@ executing==1.2.0
 fitparse==1.2.0
 geographiclib==2.0
 geopy==2.3.0
-greenlet==2.0.2
+greenlet==3.1.1
 ipdb==0.13.13
 ipython==8.14.0
 jedi==0.18.2
